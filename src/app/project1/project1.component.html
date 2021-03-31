@@ -1,0 +1,23 @@
+<div class="top-seperator"></div>
+<div class="row-title">
+  <h2>MyList</h2>
+  <div class="row">
+    <app-img *ngFor="let img of imgs.row1"
+      [imgPath]="img.imgPath"
+      [imgAlt]="img.imgAlt"
+      [imgName]="img.name"
+    ></app-img>
+  </div>
+</div>
+<div style="clear: both"></div>
+<div class="row-title">
+  <h2>Recommendation</h2>
+  <div class="row">
+    <app-img *ngFor="let img of imgs.row2"
+             [imgPath]="img.imgPath"
+             [imgAlt]="img.imgAlt"
+             [imgName]="img.name"
+    ></app-img>
+  </div>
+</div>
+
